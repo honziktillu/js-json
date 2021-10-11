@@ -7,7 +7,7 @@ let catValues;
 
 const readFile = async () => {
   try {
-    const file = await fetch("/res/json/data.json");
+    const file = await fetch("./res/json/data.json");
     return await file.json();
   } catch (e) {
     console.log(e);
